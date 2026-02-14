@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Protected Page</title>
+</head>
+<body>
+<h2>Enter Password to Continue</h2>
+<input type="password" id="passwordInput" placeholder="Password">
+<button onclick="checkPassword()">Submit</button>
+<p id="message" style="color:red;"></p>
+<div id="content"></div>
+
+<script>
+// Helpers
+async function hashString(str) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(str);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    // Convert buffer to hex
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+    return hashHex;
+}
+
+// Example usage:
+hashString("Valentine2026").then(hash => console.log(hash));
+
+function str2ab(str){ return new TextEncoder().encode(str); }
+function ab2hex(buf){ return Array.from(new Uint8Array(buf)).map(b=>b.toString(16).padStart(2,'0')).join(''); }
+function hex2ab(hex){ return new Uint8Array(hex.match(/.{1,2}/g).map(b=>parseInt(b,16))).buffer; }
+async function sha256(str){ return ab2hex(await crypto.subtle.digest('SHA-256', str2ab(str))); }
+
+// AES-GCM decryption
+async function decryptAES(cipherHex, keyHex, ivHex){
+    const key = await crypto.subtle.importKey("raw", hex2ab(keyHex), {name:"AES-GCM"}, false, ["decrypt"]);
+    const decrypted = await crypto.subtle.decrypt({name:"AES-GCM", iv:hex2ab(ivHex)}, key, hex2ab(cipherHex));
+    return new TextDecoder().decode(decrypted);
+}
+
+// ---- CONFIG ----
+const encryptedContent = "PUT_YOUR_ENCRYPTED_HEX_HERE";
+const iv = "PUT_YOUR_IV_HEX_HERE";
+const passwordHashStored = "9d07686b34bc2cfbc594b7467bb413d78d16fa7713455c8c087eb77e825fc305"; 
+
+// Check password and decrypt
+async function checkPassword(){
+    const input = document.getElementById("passwordInput").value;
+    const hash = await sha256(input);
+    console.log(hash,passwordHashStored)
+    if(hash === passwordHashStored){
+        document.getElementById("message").textContent = "Access granted.";
+        const locHash = await sha256("list");
+        const loc = locHash + ".html";
+        console.log(loc);        console.log(loc)
+        document.location.href=loc;
+    } else {
+        document.getElementById("message").textContent = "Incorrect password.";
+    }
+}
+</script>
+</body>
+</html>

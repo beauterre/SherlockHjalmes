@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Documentatie Woning Situatie</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+  h1, h2 { color: #2F4F4F; }
+  section { margin-bottom: 30px; padding: 15px; border: 1px solid #ccc; border-radius: 8px; }
+  img { max-width: 400px; display: block; margin: 10px 0; }
+  ul { margin-top: 5px; }
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.photo-item {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
+    background: #fafafa;
+}
+
+pre {
+    background: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+.date {
+    font-weight: bold;
+    color: #2F4F4F;
+    margin-top: 10px;
+}
+.sender {
+    font-weight: bold;
+    color: #1a0dab;
+}
+
+.photo-item img,
+.photo-item video {
+
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    max-height: 250px;  /* optioneel: maximale hoogte van het kader */
+    object-fit: contain; /* zorgt dat video/picture binnen het kader blijft zonder uitrekken */
+    border-radius: 4px;
+    display: block;
+}
+
+.photo-meta {
+    font-size: 0.9em;
+    margin-top: 8px;
+    color: #444;
+}
+
+.photo-meta strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Documentatie Woning Situatie</h1>
+
+
+
+
+<section id="rosina-letter">
+  <h2>Email aan mevrouw Rosina (12/02/2026)</h2>
+  <p>Nadat ik erachter kwam dat er iemand in mijn kamer was geweest, appte ik weer 123wonen en kreeg contactgegevens van mevr Rosina (had ik al).</p>
+  <pre class="brief">Email subject: Kopie communicatie over gemeenschappelijke ruimtes.
+    body:
+    Beste mevrouw Rosina,
+
+    Graag stel ik u hierbij op de hoogte van de problemen die ik deze week schriftelijk heb duidelijk gemaakt met Pari Ramchandani, evenals eeb kopie van de reactie van 123Wonen op mijn (wellicht te beleefde) communicatie hiervan. Ik ben niet iemand die gauw klaagt, maar ik merk aan de reactie dat de klacht niet erg serieus wordt genomen, dus wend ik me tot u.
+    Ik kreeg uw contact gegevens  via Bas van 123wonen en ik zag dat u signal had (ik vind dat prettiger dan whatsapp).
+    Ten eerste: nogmaals bedankt voor de proefperiode bij het wonen in Lankforst 56-01 in Nijmegen. Ik vind het prachtig, de supermarkt is 5 minuten weg, door het uilenbosje.
+    De staat van het huis waardeer ik ook zeer. Er is echter één punt, dat echt opgelost moet worden:
+
+    Het gebruik en de inrichting van de gemeenschappelijke leefruimtes. Deze verdeling is nu enorm onevenwichtig. Ook is er iemand bij mijn afwezigheid in mijn kamer geweest en ik maak me zorgen over de aanwezigheid van vele pakketen, terwijl de verkeerde naam op de deur prijkt. Hoe komen deze pakketten dan? Er zijn er vele die te groot zijn voor de standaard brievenbus beneden.
+
+    <h2>Onevenwichtig</h2>
+    De keuken, woonkamer, badkamer worden gedomineerd door privé-eigendommen van Pari, waarbij ze aan 123wonen had aangegeven, dat ik er niet aan mocht komen of ze gebruiken. En me net beschuldigde van het gebruiken van haar pot.. ik heb dezelfde pot.. ik heb er precies 1 meegenomen van huis. Eerder had ze hem al in haar kast gezet.. daar heb ik hem stilletjes uitgehaald. Misverstand, natuurlijk, maar geeft aan hoe beschermend ze is bij dingen als potten, pannen, bestek. Ik heb speciaal gouden bestek gekocht, zodat er geen verwarring kan ontstaan. 
+    <img src="">
+
+<section>
+  <h2>Verdeling</h2>
+
+  <div class="gallery">
+
+    <div class="photo-item">
+      <img id="img10" src="media/IMG20260212185030.jpg" alt="Koelkast">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Koelkast<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img10"></div><br>
+        <strong>Beschrijving:</strong> De koelkast zoals ik hem aantrof.
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img10a" src="media/IMG20260214171203.jpg" alt="Koelkast, mijn plank">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Koelkast<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img10a"></div><br>
+        <strong>Beschrijving:</strong> Pari heeft nu, na onze confrontatie, een plank voor me vrijgemaakt.. en een beetje ruimte in het vriesvak, genoeg voor een koelelement, zodat ik mijn koelbox op mijn kamer kan koelen.
+      </div>
+    </div>
+
+    
+    <div class="photo-item">
+      <img id="img11" src="media/IMG20260212183952.jpg" alt="Huiskamer">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Huiskamer<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img11"></div><br>
+        <strong>Beschrijving:</strong> De bank en de koffietafel domineren, ik mag ook wel op de bank, maar het voelt niet vrij.
+      </div>
+    </div>
+
+    <div class="photo-item">
+      <img id="img12" src="media/IMG20260212191232.jpg" alt="plek 1">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Huiskamer<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img12"></div><br>
+        <strong>Beschrijving:</strong> Ik mag hier zitten.
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img13" src="media/IMG20260214142245.jpg" alt="plek 2">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Huiskamer<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img13"></div><br>
+        <strong>Beschrijving:</strong> Ik mag hier zitten.
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img14" src="media/IMG20260214174056.jpg" alt="">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Badkamer<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img14"></div><br>
+        <strong>Beschrijving:</strong>alleen de zwarte toilet tas en 1 van de handdoeken is van mij.
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img16" src="media/IMG20260214174041.jpg" alt="">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Badkamer<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img16"></div><br>
+        <strong>Beschrijving:</strong>Er is maar een aansluiting voor een wasmachine, waar moet ik dan wassen?
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img15" src="media/IMG20260214174051.jpg" alt="">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Badkamer<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img15"></div><br>
+        <strong>Beschrijving:</strong>alleen de zwarte toilet tas en 1 van de handdoeken is van mij.
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img20" src="media/IMG20260214173959.jpg" alt="">
+      <div class="photo-meta">
+        <strong>Naam:</strong>Keuken<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img20"></div><br>
+        <strong>Beschrijving:</strong>Kastje Pari.
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img20" src="media/IMG20260214173956.jpg" alt="">
+      <div class="photo-meta">
+        <strong>Naam:</strong>Keuken<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img20"></div><br>
+        <strong>Beschrijving:</strong>Kastje Pari.
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img20" src="media/IMG20260214173949.jpg" alt="">
+      <div class="photo-meta">
+        <strong>Naam:</strong>Keuken<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img20"></div><br>
+        <strong>Beschrijving:</strong>Lade Pari, ik heb geen lade.
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img20" src="media/IMG20260214173941.jpg" alt="">
+      <div class="photo-meta">
+        <strong>Naam:</strong>Keuken<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img20"></div><br>
+        <strong>Beschrijving:</strong>Lade Pari, ik heb geen lade.
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img20" src="media/IMG20260214173932.jpg" alt="">
+      <div class="photo-meta">
+        <strong>Naam:</strong>Keuken<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img20"></div><br>
+        <strong>Beschrijving:</strong>Kastje Pari, mijn kastje onder.. staat de vuilnisbak voor, kan niet open..
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="img20" src="media/IMG20260214173932.jpg" alt="">
+      <div class="photo-meta">
+        <strong>Naam:</strong>Keuken<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img20"></div><br>
+        <strong>Beschrijving:</strong>Kastje Pari, mijn kastje onder.. staat de vuilnisbak voor, kan niet open..
+      </div>
+    </div>
+
+    
+
+  </div>
+</section>
+
+    Verder kreeg ik te horen dat ik niet aan haar prive spullen mocht komen, het gaat dan om
+    <ol>
+        <li>Wasmachine</li>
+        <li>Koelkast</li>
+        <li>bank</li>
+        <li>koffietafel</li>
+        <li>airfryer</li>
+        <li>rijstkoker</li>
+    </ol>
+    Zie hier de conversatie met 123wonen hierover.. ik kreeg geen antwoord, dus heb ik het zelf geregeld.
+
+<section id="123wonen-conversation">
+  <h2>Conversations with 123Wonen</h2>
+  <p>Correspondentie / whatsapp met 123Wonen over de situatie, afspraken en bemiddeling.</p>
+  <a href="media/whatsapp_123wonen.png">Bekijk whatsapp converatie</a>
+  <iframe src="whatsapp.html" style="width: 100%;"></iframe>
+</section>
+
+Ik kreeg niet echt voet aan de grond bij 123wonen en maakte zelf een briefje:
+
+<section id="pari-first-note">
+  <h2>Eerste briefje Pari 11/02/2026</h2>
+  <pre>Hello Miss, 
+My name is Hjalmar, I never caught yours.
+The realtor told me you don´t want me to use your personal affects, like the fridge or the couch.
+I would like to respect that.
+I only ask that you remove them from the communal space. I had a stroke 3 years ago and I have trouble with the mental effort of remembering. I hope you understand. 
+Also could you restore the old fridge? I can help you lift. The body is old, but works.
+ J.H.Snoep.
+  </pre>
+  <a href="media/IMG20260213103914.jpg">Bekijk briefje (Foto/Scan)</a>
+</section>
+
+Ik vond het briefje echter terug in de vuilnisbak. Ik ben er maar zelf met haar over begonnen.
+Ze kon de koelkast of bank niet verplaatsen. Ze was erg beschermend over eten, ivm streng vegetarisme ivm haar religie.
+Ik gaf aan dat er toch een gezamenlijke koelkast moest zijn geweest, deze was stuk.. Heb je dat tegen iemand gezegd?
+Ja, de huisbaas. Ik heb gezegd dat ik dat zou checken.
+Toen werd er een plank voor me vrijgemaakt in de koelkast en kreeg ik minimale ruimte (10cm2) in de vriezer. En ik mocht wel op de bank zitten hoor.
+Maar die was met een vroegere huisgenoot gekocht en dat moest ze eerst overleggen.
+Ik heb (voorlopig) weinig nodig, dus ik gaf aan dat ik wel een van de plastic stoelen zou nemen en een klein stukje van het TV meubel. Dat was prima.
+Ik heb toen teruggeappt aan Bas dat het geregeld was.
+
+Maar...
+  <div class="gallery">
+
+    <div class="photo-item">
+      <img id="img6" src="media/IMG20260213103914.jpg" alt="Briefje aan Pari">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Briefje geplaatst op aanrecht.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img6"></div><br>
+        <strong>Beschrijving:</strong> briefje.
+      </div>
+    </div>
+
+    <div class="photo-item">
+      <img id="img7" src="media/IMG20260214135942.jpg" alt="Briefje in vuilnis">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Briefje in vuilnis.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img7"></div><br>
+        <strong>Beschrijving:</strong> Het briefje is genegeerd. Ik heb het wel gezegd..
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<pre></pre>
+
+<section>
+  <h2>Deurzegel Incident</h2>
+
+  <div class="gallery">
+
+    <div class="photo-item">
+      <img id="img2" src="media/IMG20260213135335.jpg" alt="Deurzegel bij vertrek">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Deurzegel geplaatst bij vertrek, getest een aantal keer.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img2"></div><br>
+        <strong>Beschrijving:</strong> Deurzegel geplaatst, was stickertje dat ik op de grond vond.
+      </div>
+    </div>
+
+    <div class="photo-item">
+      <video id="img0" src="VID20260214143240.mp4" controls></video>
+      <div class="photo-meta">
+        <strong>Naam:</strong> Test/demo deurzegel.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img0"></div><br>
+        <strong>Beschrijving:</strong> Kijken of het wel werkt of het er niet zomaar afvalt.
+      </div>
+    </div>
+
+    <div class="photo-item">
+      <img id="img1" src="media/IMG20260214135713.jpg" alt="De deurzegel bij aankomst">
+      <div class="photo-meta">
+        <strong>Naam:</strong> De deurzegel bij aankomst.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-img1"></div><br>
+        <strong>Beschrijving:</strong> Stickertje ligt op de grond. De deur is geopend in mijn absentie.
+      </div>
+    </div>
+
+  </div>
+    Ik had een "deurzegel" gemaakt.. Ik had een stickertje dat op de grond lag, over het randje van de deur geplakt. zoals in een oude spionage film.. dit omdat mijn deur niet op slot kom.
+    Tot mijn stomme verbazing was deze zegel verbroken toen ik terug kwam.. het stickertje lag op de grond.
+    Ik heb gekeken of het er niet vanzelf afgevallen was.. maar het stickertje blijft stevig zitten.. zelfs some als ik de deur open deed..
+</section>
+
+<section id="address-card">
+  <h2>Adreskaartje</h2>
+  <pre>Ik vond het een naar idee dat er iemand op mijn kamer was geweest.. gelukkig waren de twee pakketjes die er lagen nog verzegeld...
+     Maar ik begon het een en ander anders te bezien.
+    Bij terugkomst zag ik dat de naam van Pari niet op het adresstickertje staat.. Feitelijk ben ik nu redelijk overtuigd van asociaal gedrag en
+    ik herinnerde me dat ik heel wat verpakkingen van grote dingen had zien liggen.
+    Dingen die helemaal niet in de postbus beneden passen.. Hoe komen die daar?
+    Dat is toch vragen om problemen met de post? Dus waarom zou je dat niet aanpassen.
+    In ieder geval, zou ik mijn naam daar willen hebben als volgende week mijn huis verbouwd wordt..
+    Ik moet dan bij de koelkast kunnen op een normale manier en kunnen wassen..
+    Tenminste.. als we dit allemaal kunnen oplossen, anders zie ik ervan af.
+    Terwijl ik dit schrijf (18:35) gaat de deurbel. ik merk dat noch de makelaar, noch Pari me heeft laten zien hoe dat werkt.. ik negeer het maar.
+    </pre>
+  <p>R. Groeneveld staat op het adreskaartje. Er liggen veel postpakketten binnen, wat dit vreemd maakt.</p>
+  <img src="media/IMG20260214135521.jpg" alt="Adreskaartje foto 1">
+  <img src="media/IMG20260214141238.jpg" alt="Adreskaartje foto 2">
+
+
+
+
+Nog wat andere klachten, minder belangrijk, maar toch..
+<section id="thermostat">
+  <h2>Thermostaat</h2>
+  <p>De thermostaat stond op 16.5 graden. Er moeten afspraken worden gemaakt over wooncomfort. Niet de thermostaat laag als er iemand in huis is. Ik kom er niet aan, want ik snap het ding niet.. Volgens mij moet het via WiFi</p>
+
+  <img src="media/IMG20260212194057.jpg" alt="Adreskaartje foto 2">
+
+</section>
+
+<section id="doors">
+  <h2>Deuren</h2>
+  <p>Alle deuren (niet alleen de mijne) horen gesloten te zijn voor privacy en veiligheid. Observatie tijdens makelaarsbezoek:</p>
+  <blockquote>"Excuse me, what are you doing in my house?" – dit geeft aan hoe Pari er momenteel over denkt. Het is haar huis.</blockquote>
+</section>
+
+<section id="hygiene">
+  <h2>Hygiene</h2>
+  <p>Ik kom tot nog toe iedere dag etensresten en vuile borden in de gootsteen tegen. dit kan ratten aantrekken. Ook is er veel rommel, waaronder veel karton, dat is voor ongedierte nestmateriaal.. Maar vooral de etensresten</p>
+
+  <div class="gallery">
+
+    
+    <div class="photo-item">
+      <img id="rommel1" src="media/IMG20260214140003.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Rommel.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel1"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel2" src="media/IMG20260214142253.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Rommel.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel2"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel3" src="media/IMG20260212190206.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Rommel.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel3"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel4" src="media/IMG20260213102800.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Rommel.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel4"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel5" src="media/IMG20260213102802.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Rommel.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel5"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel6" src="media/IMG20260213104336.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Rommel.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel6"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel7" src="media/IMG20260213104926.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Rommel. (heb ik schoongemaakt voor koken)<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel7"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel8" src="media/IMG20260213104930.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Rommel. (heb ik schoongemaakt voor koken)<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel8"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel9" src="media/IMG20260213105808.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> Zo, ff poetsen, maar dan heb je ook wat :)<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel9"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel10" src="media/IMG20260213110522.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong> pizza? dozen en plastic verpakking van een pakketje?<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel10"></div><br>
+      </div>
+    </div>
+    <div class="photo-item">
+      <img id="rommel11" src="media/IMG20260213135350.jpg">
+      <div class="photo-meta">
+        <strong>Naam:</strong>  In het gootsteentje van het toilet zit een stickertje dat niet meer weg te krijgen is.<br>
+        <strong>Datum:</strong> <div class="date-display" id="date-rommel11"></div><br>
+      </div>
+    </div>
+    
+
+  </div>
+
+
+
+</section>
+
+De koelkast is vervangen, daarvan bent u op de hoogte heeft Pari gezegd. (landlord) bij 123wonen weten ze van niks. maar het is lastig te zeggen, want ze reageren niet echt.
+Ik vermoed sterk dat dit een leugen is, maar wellicht heeft ze schriftelijke toestemming van u? Anders dan is dit een onbestaanbare situatie.
+
+Ik zou graag binnen een week een gezamenlijke koelkast en wasmachine hebben.. De andere dingen verwacht ik voor die tijd concrete verbeteringen in te zien. Dan geef ik Pari nog een keer het voordeel van de twijfel.
+
+
+Met deze brief stuur ik u fotografisch bewijs van wat ik zeg. De Conversatie met 123wonen.. en de brief die ik vandaag aan Pari voorleg, waarin ik uitleg wat de voorwaarden zijn voor cohabitatie.
+
+
+
+  </pre>
+</section>
+
+
+
+
+<section id="pari-second-note">
+  <h2>Tweede briefje Pari</h2>
+  <p>Follow-up briefje waarin de eerdere afspraken worden herhaald, inclusief 'je woord is startpunt' en tijdelijke oplossing.</p>
+
+    <pre>
+
+Dear Pari,
+I want to  write this calmly and clearly, because I believe clarity is a form of respect.
+
+At this stage in my life, I need very little.. I can manage with minimal space.
+Because of this I was initially willing to compromis more than most people would. Not because
+the situation is acceptable, but because I have the capacity to absorb some inconvenience for a short time.
+However, shared living still requires respect, balance and order.
+
+The kitchen must be left useable, clean, without garbage or dirty dishes. Each of our stuff should not take up more than half of the available space.
+I want to live cheaply and need to store dry foods.
+
+Communal areas in general cannot be filled with private belongings or trash.
+The space we agreed upon is fine FOR NOW, but the home itself must remand functional and dignified.
+That is not about preference, it is about basic responsibility. You are young, I understand.
+
+For one week, I will continue with our current TEMPORARY arrangement:
+-I will use the one shelf in the fridge and the small space in the freezer.
+-I will limit myself to a small corner in the living space.
+-I will wash elsewhere.
+-I will tolerate the clutter in the bathroom, kitchen en living room. I myself am a minimalist, but I can manage the visual overload for a week.
+However.. religion has no place in shared spaces. I will keep my goddess Kali in my room. I expect the same from you.
+
+I´d like to stress. This is a conscious compromise on my part, not a permanent  solution.
+I do this EVEN though. I know you lied about the fridge.. and you´ve been in my room. this has been reported and checked.
+It is NOT a permantent solution.
+In one week renovations will start at my house, I expect these problems to be resolved by then..
+
+During this week, I expect you to:
+-clear sufficient kitchen space. Keep it useable, clean, without leftover dishes..
+-remove or properly resolve with the landlord the private item question of couch, table, fridge, washing machine.
+-Remove all garbage from the house.
+In general: restore the shared spaces to normal, liveable, shared condition.
+
+You have said you were particular with food, because of your religion. This religion is designed to make tolerance higher, not lower. 
+You have said you "cannot" remove them about the fridge and couch.. I want to challenge that gently. Often 
+"cannot" really means "it feels difficult" or "I don´t know how yet". Difficulty does not remove responsibility, you made the situation, you have to unmake it.
+Growth comes from facing what we would rather avoid.
+
+I am offering this transition period because I do not urgently need the space myself.
+This period was for observing. I have observed and because I have very little memory, I use fotographic evidence of what irks me.
+But please do not let this generosity become a reason to postpone action. It is now or never.
+
+Order in a home reflects inner steadiness.. This matters especially to me, given my condition.
+
+By the 21th of februari, I need to see confirmation of the concrete steps you are taking and the fridge and washing machine need to be accessible.
+Else I will inform the landlord I will not rent this place and why.
+
+I am not writing this in anger. I am writing it because living responsibly is important. and from our brief conversation I believe tou are capable of it.
+
+
+Best regards,
+Hjalmar Snoep.
+
+  </pre>
+  OR.... ?
+
+  <pre>
+
+Dear Pari,
+
+Thank you for the kindness you have shown me so far. I appreciate it. At the same time, I feel a lingering imbalance in how the shared spaces are being used.
+
+Currently, the living space is dominated by your belongings. I do not need much space personally, but it feels as though I am a guest in your home. The washing situation is manageable for now, but my own home will undergo renovations starting next week, and I will not have access to a washing machine. I understand that the current one is yours, but there is no room for another, so we will need to find an arrangement.
+
+Regarding the communal areas, I would like you to consider a plan to ensure that your items occupy no more than roughly half of the shared spaces. Please think of a solution that is fair and practical so that both of us can live comfortably.
+
+Thank you for reflecting on this and for your cooperation.
+
+Best regards,
+Hjalmar Snoep.
+
+  </pre>
+  OR.... ?
+  <pre>
+
+  Dear Pari,
+
+I noticed that the note I left on the kitchen counter was not responded to. I want to make sure my message is clear, so I am writing briefly again.
+
+As I mentioned before, the shared living spaces are currently dominated by your belongings. I do not need much space myself, but the current situation makes it difficult for both of us to use the apartment comfortably.
+
+My home will undergo renovations next week, and I will not have access to a washing machine. Since the current one is yours and there is no room for another, we need to agree on a practical solution.
+
+I only have your word for what we talked about previously. I intend to hold to that as a starting point — and expect that our agreements are followed through in practice.
+
+Please take this week to propose a plan so that your belongings occupy no more than roughly half of the shared spaces. This will allow us both to live comfortably while respecting the home.
+
+Thank you for taking this seriously.
+
+Best regards,
+Hjalmar Snoep.
+  </pre>
+</section>
+
+
+</section>
+
+
+
+
+<script>
+function extractDateFromFilename(src) {
+    // Extract filename
+    const parts = src.split("/"); // in case src has a path
+    const filename = parts[parts.length - 1];
+
+    // Regex to match IMGYYYYMMDDHHMMSS.jpg
+    const regex = /IMG(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})(\d{2})/i;
+    const match = filename.match(regex);
+    if (match) {
+        const [ , year, month, day, hour, minute, second ] = match;
+        // Return a JS Date object
+        return new Date(`${year}-${month}-${day}T${hour}:${minute}:${second}`);
+    }
+    return null;
+}
+
+// Iterate over all images with class photo-item
+document.querySelectorAll(".photo-item img").forEach(img => {
+    const date = extractDateFromFilename(img.src);
+    const display = document.getElementById("date-" + img.id);
+    if (date) {
+        display.textContent = "" + date.toLocaleString();
+    } else {
+        display.textContent = "No valid date found in filename";
+    }
+});
+</script>
+
+</body>
+</html>

@@ -609,7 +609,7 @@ Dovenetel 52, 7322 DS, Apeldoorn, The Netherlands.
       </div>
     </div>
     <div class="photo-item">
-      <img id="nu01" src="media/IMG20260214171203.jpg" alt="now">
+      <img id="nu01" src="media/IMG20260219102252.jpg" alt="now">
       <div class="photo-meta">
         <strong>Datum:</strong> <div class="date-display" id="date-nu01"></div><br>
       </div>
@@ -776,6 +776,7 @@ Dovenetel 52, 7322 DS, Apeldoorn, The Netherlands.
 <script>
 function extractDateFromFilename(src) {
     // Extract filename
+	if(src.indexOf("signal")!=-1) return -1;
     const parts = src.split("/"); // in case src has a path
     const filename = parts[parts.length - 1];
 
@@ -793,12 +794,15 @@ function extractDateFromFilename(src) {
 // Iterate over all images with class photo-item
 document.querySelectorAll(".photo-item img").forEach(img => {
     const date = extractDateFromFilename(img.src);
-    const display = document.getElementById("date-" + img.id);
-    if (date) {
-        display.textContent = "" + date.toLocaleString();
-    } else {
-        display.textContent = "No valid date found in filename";
-    }
+	if(date!=-1)
+	{
+		const display = document.getElementById("date-" + img.id);
+		if (date) {
+			display.textContent = "" + date.toLocaleString();
+		} else {
+			display.textContent = "No valid date found in filename";
+		}
+	}
 });
 </script>
 
